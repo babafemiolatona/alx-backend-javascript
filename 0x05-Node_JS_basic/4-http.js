@@ -1,4 +1,5 @@
 const http = require('http');
+
 const port = 1245;
 
 const app = http.createServer((req, res) => {
@@ -7,6 +8,7 @@ const app = http.createServer((req, res) => {
 });
 
 app.listen(port, () => {
+  console.log(`Server is listening on ${port}`);
 });
 
 module.exports = app;
